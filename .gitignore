@@ -1,2 +1,9 @@
-# Ignore environment files with secrets
+# Ignore Python cache files
+__pycache__/
+*.pyc
+
+# Ignore environment files
 .env
+
+# Ignore your local data file if it's personal
+data.json
