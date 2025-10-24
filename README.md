@@ -8,7 +8,7 @@ Mycelia is a cozy eco-companion Discord bot that helps users build sustainable h
 - 🌱 `!ecoaction` — Suggests a small green action for the day  
 - 🔁 `!log` — Track progress and build habit streaks  
 - 🌳 `!profile` — Shows your level, XP, and streak  
-- 💬 Cute personality and encouraging tone
+- 💬 Cute personality and encouraging tone!
 
 ---
 
