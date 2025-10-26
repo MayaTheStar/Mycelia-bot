@@ -51,7 +51,13 @@ encouragements = [
 @bot.event
 async def on_ready():
     print(f'🌿 Mycelia is online as {bot.user}!')
-    await bot.change_presence(activity=discord.Game(name="👀 Fun Fact: My name comes from Mycelium! 🍄"))
+    # Set bot's status as a custom bio line
+    await bot.change_presence(
+        activity=discord.Activity(
+            type=discord.ActivityType.watching,  # or listening, etc.
+            name="👀 Fun Fact: My name comes from Mycelium! 🍄"
+        )
+    )
 
 # COMMANDS
 @bot.command(name='hello')
