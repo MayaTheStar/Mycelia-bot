@@ -10,19 +10,19 @@ from dotenv import load_dotenv
 from actions import actions
 from utils import load_data, save_data
 
-#Load environment variables (token)
+# Load environment variables (token)
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
 
 if not TOKEN:
     raise ValueError("🚨 No DISCORD_TOKEN found in your .env file!")
 
-#Bot setup
+# Bot setup
 intents = discord.Intents.default()
 intents.message_content = True
 bot = commands.Bot(command_prefix='!', intents=intents)
 
-#Helper function for levels
+# Helper function for levels
 def get_level(xp: int) -> str:
     """Return a level name based on XP."""
     if xp < 10:
@@ -36,7 +36,7 @@ def get_level(xp: int) -> str:
     else:
         return "Ancient Tree 🌼"
 
-#Cozy encouragement messages
+# Cozy encouragement messages
 encouragements = [
     "Keep growing strong! 🌱",
     "Tiny steps make a forest bloom 🌳",
@@ -47,20 +47,21 @@ encouragements = [
     "Every action nurtures the planet 🌼"
 ]
 
-#EVENTS
+# EVENTS
 @bot.event
 async def on_ready():
-    print(f'🌿Mycelia is online as {bot.user}!')
+    print(f'🌿 Mycelia is online as {bot.user}!')
+    await bot.change_presence(activity=discord.Game(name="👀 Fun Fact: My name comes from Mycelium! 🍄"))
 
-#COMMANDS
+# COMMANDS
 @bot.command(name='hello')
 async def hello(ctx):
-    await ctx.send("Haii there! I'm Mycelia, your cozy eco-companion😊")
+    await ctx.send("Haii there! I'm Mycelia, your cozy eco-companion 😊")
 
 @bot.command(name='ecoaction')
 async def ecoaction(ctx):
     if not actions:
-        await ctx.send("🍁No eco actions available right now.")
+        await ctx.send("🍁 No eco actions available right now.")
         return
     action = random.choice(actions)
     await ctx.send(f"🌎 Today's eco action:\n**{action}**")
@@ -72,7 +73,7 @@ async def log_action(ctx):
     data = load_data()
     today = str(date.today())
 
-    #Create user entry if not found
+    # Create user entry if not found
     if user_id not in data:
         data[user_id] = {
             "xp": 0,
@@ -84,46 +85,47 @@ async def log_action(ctx):
     user = data[user_id]
     last_log = user.get("last_log_date")
 
-    #Prevent double logging in one day
+    # Prevent double logging in one day
     if last_log == today:
         await ctx.send("You already logged an action today 🌿 Come back tomorrow!")
         return
 
-    #Streak logic with a grace period
+    # Streak logic with a grace period
     if last_log:
         last_date = date.fromisoformat(last_log)
         days_since_last = (date.today() - last_date).days
 
         if days_since_last == 1:
+            # Logged yesterday --> normal streak continuation
             user["streak"] += 1
-            streak_msg = "You're keeping the momentum going!🌞"
-        elif days_since_last <= 3:
-            #Grace period (missed 1-2 days)
+            streak_msg = "You're keeping the momentum going! 🌞"
+        elif 2 <= days_since_last <= 3:
+            # Grace period: missed 1-2 days --> streak continues
             user["streak"] += 1
-            streak_msg = "🌛You took a short rest, but your streak continues strong!"
+            streak_msg = "🌛 You took a short rest, but your streak continues strong!"
         else:
-            #Too many days passed - reset streak
+            # Missed more than 2 days --> streak resets
             user["streak"] = 1
-            streak_msg = "Welcome back! 🌿Your new growth cycle begins today."
+            streak_msg = "Welcome back! 🌿 Your new growth cycle begins today."
     else:
-        #First-ever log
+        # First-ever log
         user["streak"] = 1
         streak_msg = "Your eco-journey begins today! 🌱"
 
-    #Update data
+    # Update user stats
     user["last_log_date"] = today
     user["actions_completed"] += 1
     user["xp"] += 2
 
     save_data(data)
 
-    #Determine current level
+    # Determine current level
     level = get_level(user["xp"])
 
-    #Random encouragement
+    # Random encouragement
     encouragement = random.choice(encouragements)
 
-    #Send a cozy message
+    # Send cozy message
     await ctx.send(
         f"+2 🌱 eco points!\n"
         f"{streak_msg}\n\n"
@@ -154,8 +156,7 @@ async def profile(ctx):
     embed.add_field(name="🔥 Streak", value=f"{user['streak']} days")
     await ctx.send(embed=embed)
 
-#RUN BOT 🚀
-
+# RUN BOT 🚀
 if __name__ == "__main__":
     try:
         bot.run(TOKEN)
