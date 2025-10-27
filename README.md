@@ -42,23 +42,23 @@ A sense of shared community on Discord
 
 Clone this repository:
 
-<pre> ```git clone https://github.com/<yourusername>/Mycelia-bot.git
-cd Mycelia-bot ``` </pre>
+<pre> git clone https://github.com/<yourusername>/Mycelia-bot.git
+cd Mycelia-bot </pre>
 
 
 Install dependencies:
 
-<pre> ```pip install -r requirements.txt``` </pre>
+<pre> pip install -r requirements.txt </pre>
 
 
 Create a .env file in the root directory:
 
-<pre> ```DISCORD_TOKEN=your_bot_token_here`` </pre>
+<pre> DISCORD_TOKEN=your_bot_token_here </pre>
 
 
 Run the bot:
 
-<pre> ```python main.py``` </pre>
+<pre> python main.py </pre>
 
 
 Invite your bot to a Discord server and try:
