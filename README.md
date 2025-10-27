@@ -6,11 +6,11 @@ Mycelia helps Discord users build eco-friendly habits through simple daily actio
 
 ✨ Features
 
-🌱 !ecoaction - Get a daily green action you can do in real life
+🌱 `!ecoaction` - Get a daily green action you can do in real life
 
-🔁 !log - Record your eco-action and grow your streak
+🔁 `!log` - Record your eco-action and grow your streak
 
-🌳 !profile - See your level, XP, and total actions
+🌳 `!profile` - See your level, XP, and total actions
 
 💬 Encouraging personality - Mycelia keeps you motivated with gentle, nature-themed messages
 
@@ -33,41 +33,41 @@ Mycelia makes sustainability easily approachable by turning daily eco-friendly a
 
 It encourages:
 
->Positive reinforcement for real-world actions
->Habit-building through streaks
->A sense of shared community on Discord
-*"Tiny steps make a forest bloom 🌳"*
+Positive reinforcement for real-world actions
+Habit-building through streaks
+A sense of shared community on Discord
+>*"Tiny steps make a forest bloom 🌳"*
 
 🚀 Setup & Usage
 
 Clone this repository:
 
-git clone https://github.com/<yourusername>/Mycelia-bot.git
-cd Mycelia-bot
+<pre> ```git clone https://github.com/<yourusername>/Mycelia-bot.git
+cd Mycelia-bot ``` </pre>
 
 
 Install dependencies:
 
-pip install -r requirements.txt
+<pre> ```pip install -r requirements.txt``` </pre>
 
 
 Create a .env file in the root directory:
 
-DISCORD_TOKEN=your_bot_token_here
+<pre> ```DISCORD_TOKEN=your_bot_token_here`` </pre>
 
 
 Run the bot:
 
-python main.py
+<pre> ```python main.py``` </pre>
 
 
 Invite your bot to a Discord server and try:
 
-!ecoaction
+`!ecoaction`
 
-!log
+`!log`
 
-!profile
+`!profile`
 
 🎥 Demo (for Hackathon)
 
