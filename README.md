@@ -4,7 +4,6 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.13-blue?logo=python">
   <img src="https://img.shields.io/badge/Discord.py-2.4.0-green?logo=discord">
-  <img src="https://img.shields.io/badge/Hackathon-BatchHacks%20404%20Found-yellow">
 </p>
 
 
@@ -75,9 +74,12 @@ python main.py
 
 5. **Invite Mycelia to a server and try:**
 ```bash
-`!ecoaction`
-`!log`
-`!profile`
+!ecoaction
+!log
+!profile
+!quizzy
+!summon
+!spirit
 ```
 
 ## 🎬 Demo Video
@@ -101,4 +103,4 @@ python main.py
 Mycelia is more than a bot - it's a step toward climate empathy through technology.
 By transforming everyday choices into growth, connection, and reflection, it nurtures a future where sustainability feels rewarding, not overwhelming.
 
-Just as the mycelium nourishes forests through invisible threads, Mycelia aims to connect people through acts of sustainability, one small action at a time🌿
+Just as the mycelium nourishes forests through invisible threads, Mycelia aims to connect people through acts of sustainability, one small action at a time 🍁
