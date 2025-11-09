@@ -32,9 +32,9 @@ Mycelia bridges that gap by guiding users toward **small, meaningful real-world 
 
 ## 💚 Impact  
 
-🌿 **Promotes habit-building** — Encourages users to practice sustainability consistently  
-🌎 **Gamifies real-world impact** — Turns environmental responsibility into a social experience  
-🪷 **Creates a digital reflection of positive action** — Every streak, XP point, and tree reflects genuine effort  
+🌿 **Promotes habit-building** - Encourages users to practice sustainability consistently  
+🌎 **Gamifies real-world impact** - Turns environmental responsibility into a social experience  
+🪷 **Creates a digital reflection of positive action** - Every streak, XP point, and tree reflects genuine effort  
 
 > Designed to spark environmental awareness through playful interaction and positive reinforcement.
 
