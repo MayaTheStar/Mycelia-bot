@@ -1,84 +1,104 @@
-# Mycelia Bot
+<h1 align="center">🌿 Mycelia: The Eco-Companion Bot 🌱</h1>
+<p align="center"><em>"Tiny steps can make a forest bloom"</em> 🪷</p>
 
-A cozy eco-companion that turns small sustainable actions into daily growth 🌱
-
-Mycelia helps Discord users build eco-friendly habits through simple daily actions, XP rewards, and habit streaks - making sustainability social, fun, and achievable.
-
-✨ Features
-
-🌱 `!ecoaction` - Get a daily green action you can do in real life
-
-🔁 `!log` - Record your eco-action and grow your streak
-
-🌳 `!profile` - See your level, XP, and total actions
-
-💬 Encouraging personality - Mycelia keeps you motivated with gentle, nature-themed messages
-
-🕊️ Offline impact - Promotes mindful, real-world behavior change through digital engagement
-
-🧠 Tech Stack
-
-Language: Python 3.13.7
-
-Libraries: discord.py, dotenv
-
-Storage: JSON file for user data
-
-Architecture: Modular design with helper files for data management (utils.py) and eco actions (actions.py)
-
-🌍 Vision & Impact
-
-Climate change can feel overwhelming, but change starts with one small step.
-Mycelia makes sustainability easily approachable by turning daily eco-friendly actions into a rewarding, gamified experience.
-
-It encourages:
-
-Positive reinforcement for real-world actions
-Habit-building through streaks
-A sense of shared community on Discord
->*"Tiny steps make a forest bloom 🌳"*
-
-🚀 Setup & Usage
-
-Clone this repository:
-
-<pre> git clone https://github.com/<yourusername>/Mycelia-bot.git
-cd Mycelia-bot </pre>
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.13-blue?logo=python">
+  <img src="https://img.shields.io/badge/Discord.py-2.4.0-green?logo=discord">
+  <img src="https://img.shields.io/badge/Hackathon-BatchHacks%20404%20Found-yellow">
+</p>
 
 
-Install dependencies:
+Mycelia is a **gamified sustainability bot** for Discord that transforms small eco-friendly actions into personal growth and community impact.  
+It helps users build consistent green habits through **daily challenges, streaks, XP rewards, and gentle encouragement**, making sustainability *fun, social, and achievable*.  
 
-<pre> pip install -r requirements.txt </pre>
-
-
-Create a .env file in the root directory:
-
-<pre> DISCORD_TOKEN=your_bot_token_here </pre>
+🪴 *Inspired by nature's own network — the **mycelium**, a vast underground web that connects and nourishes entire forests — Mycelia connects people through shared eco-actions, reminding us that small efforts can grow into powerful collective change.*
 
 
-Run the bot:
+## ✨ Why Mycelia?
 
-<pre> python main.py </pre>
+Climate change can feel overwhelming, and most people *want* to help but don't know where to start.  
+Mycelia bridges that gap by guiding users toward **small, meaningful real-world actions** that add up to a healthier and more beautiful planet. 🌍  
 
 
-Invite your bot to a Discord server and try:
+## 🌱 Core Features  
 
+| Command | Description |
+|----------|-------------|
+| `!ecoaction` | 🌍 Receive a simple daily eco-action to complete in real life |
+| `!log` | 📗 Log your completed action, gain XP, and grow your streak |
+| `!profile` | 🌳 View your current level, streak, and total CO₂ saved |
+| `!forest` | 🍃 See your virtual forest evolve with your progress |
+| `!summon` | 🕊️ Meet your elemental spirit (like Pyra 🔥 or Nympha 🌊) and watch them evolve with your eco-journey |
+
+
+## 💚 Impact  
+
+🌿 **Promotes habit-building** — Encourages users to practice sustainability consistently  
+🌎 **Gamifies real-world impact** — Turns environmental responsibility into a social experience  
+🪷 **Creates a digital reflection of positive action** — Every streak, XP point, and tree reflects genuine effort  
+
+> Designed to spark environmental awareness through playful interaction and positive reinforcement.
+
+
+## 🧠 Tech Stack  
+
+- **Language:** Python 3.13.7  
+- **Libraries:** `discord.py`, `dotenv`  
+- **Storage:** Local JSON database for user stats  
+- **Structure:** Modular Cog-based architecture (`eco.py`, `general.py`, `spirits.py`)  
+- **Inspiration:** Environmental psychology, gamification, and community sustainability movements  
+
+
+## ⚙️ Setup & Usage  
+
+1. **Clone the repository**
+```bash
+git clone https://github.com/<MayaTheStar>/Mycelia-bot.git
+cd Mycelia-bot
+```
+
+2. **Install dependencies**
+```bash
+pip install -r requirements.txt
+```
+
+3. **Add your Discord token**
+```bash
+Create a `.env` file in the root directory:
+DISCORD_TOKEN=your_bot_token_here
+```
+
+4.**Run the bot**
+```bash
+python main.py
+```
+
+5. **Invite Mycelia to a server and try:**
+```bash
 `!ecoaction`
-
 `!log`
-
 `!profile`
+```
 
-🎥 Demo (for Hackathon)
+## 🎬 Demo Video
 
-(Coming soon!! A 3-minute walkthrough video will be linked here :))
+ Coming soon! :)
 
-💡 Future Enhancements
+## 💡 Future Enhancements
 
-🌎 Add sustainability APIs for real-time eco tips
+🌍 Global Forest: Combine all users' progress into a shared community forest
 
-🧩 Leaderboards for communities & friends
+🧩 Leaderboards: Inspire friendly competition and collective action
 
-📊 Dashboard to visualize streaks and XP progress
+🔎 AI-powered tips: Generate daily sustainability insights using open data APIs
 
-☀️ Integration with IoT devices (e.g., smart plugs, energy meters)
+📊 Web dashboard: Visualize progress and CO₂ savings
+
+☀️ IoT integration: Connect real devices (smart plugs, energy trackers) for real-time eco impact
+
+## 🌸 Vision
+
+Mycelia is more than a bot - it's a step toward climate empathy through technology.
+By transforming everyday choices into growth, connection, and reflection, it nurtures a future where sustainability feels rewarding, not overwhelming.
+
+Just as the mycelium nourishes forests through invisible threads, Mycelia aims to connect people through acts of sustainability, one small action at a time🌿
