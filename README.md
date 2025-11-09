@@ -10,7 +10,7 @@
 Mycelia is a **gamified sustainability bot** for Discord that transforms small eco-friendly actions into personal growth and community impact.  
 It helps users build consistent green habits through **daily challenges, streaks, XP rewards, and gentle encouragement**, making sustainability *fun, social, and achievable*.  
 
-🪴 *Inspired by nature's own network — the **mycelium**, a vast underground web that connects and nourishes entire forests — Mycelia connects people through shared eco-actions, reminding us that small efforts can grow into powerful collective change.*
+🪴 *Inspired by nature's own network - the **mycelium**, a vast underground web that connects and nourishes entire forests - Mycelia connects people through shared eco-actions, reminding us that small efforts can grow into powerful collective change.*
 
 
 ## ✨ Why Mycelia?
